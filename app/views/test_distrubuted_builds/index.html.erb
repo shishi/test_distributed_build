@@ -1,0 +1,21 @@
+<h1>Listing test_distrubuted_builds</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @test_distrubuted_builds.each do |test_distrubuted_build| %>
+  <tr>
+    <td><%= link_to 'Show', test_distrubuted_build %></td>
+    <td><%= link_to 'Edit', edit_test_distrubuted_build_path(test_distrubuted_build) %></td>
+    <td><%= link_to 'Destroy', test_distrubuted_build, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Test distrubuted build', new_test_distrubuted_build_path %>
